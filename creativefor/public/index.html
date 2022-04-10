@@ -360,6 +360,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script type="module">
+				// Import the functions you need from the SDKs you need
+				import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+				import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-analytics.js";
+				// TODO: Add SDKs for Firebase products that you want to use
+				// https://firebase.google.com/docs/web/setup#available-libraries
+			  
+				// Your web app's Firebase configuration
+				// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+				const firebaseConfig = {
+				  apiKey: "AIzaSyAe6m5YTxbACoIDcKoEnK5R-03u23FcK1Q",
+				  authDomain: "creative-for.firebaseapp.com",
+				  projectId: "creative-for",
+				  storageBucket: "creative-for.appspot.com",
+				  messagingSenderId: "783214123713",
+				  appId: "1:783214123713:web:f140cb4328497705d71240",
+				  measurementId: "G-LBNV13LMGK"
+				};
+			  
+				// Initialize Firebase
+				const app = initializeApp(firebaseConfig);
+				const analytics = getAnalytics(app);
+			  </script>
 	</body>
 </html>
